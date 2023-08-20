@@ -1,5 +1,6 @@
 package discord_rpc;
 
+#if (cpp && !macro)
 import cpp.Callable;
 import cpp.Function;
 import cpp.ConstCharStar;
@@ -215,3 +216,4 @@ typedef DiscordPresenceOptions = {
     var Yes = 1;
     var ignore = 2;
 }
+#end
